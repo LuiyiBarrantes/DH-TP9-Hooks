@@ -1,4 +1,6 @@
 # TP - 9 - DH - Hooks
+## Para ver el proyecto desde github pages ir al siuiente enlace
+[TP - 9 - DH - Hooks](https://luiyibarrantes.github.io/DH-TP9-Hooks/)
 #### Instalar las dependencias con el comando:
 ```
 > npm i
