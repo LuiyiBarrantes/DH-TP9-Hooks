@@ -5,24 +5,25 @@ import GenresInDb from './GenresInDb';
 import LastMovieInDb from './LastMovieInDb';
 import ContentRowMovies from './ContentRowMovies';
 import NotFound from './NotFound'; */
-import {Link/* , Route, Switch */} from 'react-router-dom';
+import { Link/* , Route, Switch */ } from 'react-router-dom';
 /* import SearchMovies from './SearchMovies'; */
 
 export const SideBar = () => {
-return(
+    return (
         <React.Fragment>
             {/*<!-- Sidebar -->*/}
             <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 {/*<!-- Sidebar - Brand -->*/}
-                <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
-                    <div className="sidebar-brand-icon">
-                        <img className="w-100" src={image} alt="Digital House"/>
-                    </div>
-                </a>
+                <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
+                    <a href="/">
+                        <div className="sidebar-brand-icon">
+                            <img className="w-100" src={image} alt="Digital House" />
+                        </div>
+                    </a></Link>
 
                 {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider my-0"/>
+                <hr className="sidebar-divider my-0" />
 
                 {/*<!-- Nav Item - Dashboard -->*/}
                 <li className="nav-item active">
@@ -32,7 +33,7 @@ return(
                 </li>
 
                 {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider"/>
+                <hr className="sidebar-divider" />
 
                 {/*<!-- Heading -->*/}
                 <div className="sidebar-heading">Actions</div>
@@ -40,13 +41,13 @@ return(
                 {/* buscador */}
                 <li className="nav-item nav-link">
                     <Link className="nav-link" to="/SearchMovies">
-                    <i class="fas fa-fw fa-magnifying-glass"></i>
+                        <i class="fas fa-fw fa-magnifying-glass"></i>
                         <span>Buscador</span></Link>
-                </li>    
+                </li>
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                <Link className="nav-link" to="/GenresInDb">
+                    <Link className="nav-link" to="/GenresInDb">
                         <i className="fas fa-fw fa-folder"></i>
                         <span>Generos</span>
                     </Link>
@@ -61,14 +62,14 @@ return(
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item nav-link">
-                <Link className="nav-link" to="/ContentRowMovies">
+                    <Link className="nav-link" to="/ContentRowMovies">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Metricas</span></Link>
                 </li>
-                
+
 
                 {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider d-none d-md-block"/>
+                <hr className="sidebar-divider d-none d-md-block" />
             </ul>
             {/*<!-- End of Sidebar -->*/}
 

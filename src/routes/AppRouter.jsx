@@ -4,13 +4,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-/* import { Home } from '../pages/Home';
-import { Products } from '../pages/Products'; */
-/* import { Users } from '../pages/Users'; */
-/* import { Chefs } from '../pages/Chefs'; */
-import { NotFound } from '../components/NotFound'; // Importa el componente NotFound
+
+import { NotFound } from '../components/NotFound';
 import { Root } from "../components/Root";
-/* import ContentWrapper from "../components/ContentWrapper"; */
 import SearchMovies from "../pages/SearchMovies";
 import GenresInDb from "../pages/GenresInDb";
 import LastMovieInDb from "../pages/LastMovieInDb";
@@ -24,6 +20,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <ContentRowTop />
+      },
+      {
+        path: "DH-TP9-Hooks/",
         element: <ContentRowTop />
       },
       {
