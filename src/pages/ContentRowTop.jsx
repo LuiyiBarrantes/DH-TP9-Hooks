@@ -1,7 +1,7 @@
 import React from 'react';
-import ContentRowCenter from './ContentRowCenter';
+import ContentRowCenter from '../components/ContentRowCenter';
 import ContentRowMovies from './ContentRowMovies';
-import Chart from './Chart';
+import Chart from '../components/Chart';
 
 function ContentRowTop(){
     return(

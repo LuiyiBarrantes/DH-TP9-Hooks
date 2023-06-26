@@ -1,15 +1,15 @@
 import React from 'react';
 import image from '../assets/images/logo-DH.png';
-import ContentWrapper from './ContentWrapper';
+/* import ContentWrapper from './ContentWrapper';
 import GenresInDb from './GenresInDb';
 import LastMovieInDb from './LastMovieInDb';
 import ContentRowMovies from './ContentRowMovies';
-import NotFound from './NotFound';
-import {Link, Route, Switch} from 'react-router-dom';
-import SearchMovies from './SearchMovies';
+import NotFound from './NotFound'; */
+import {Link/* , Route, Switch */} from 'react-router-dom';
+/* import SearchMovies from './SearchMovies'; */
 
-function SideBar(){
-    return(
+export const SideBar = () => {
+return(
         <React.Fragment>
             {/*<!-- Sidebar -->*/}
             <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -73,7 +73,7 @@ function SideBar(){
             {/*<!-- End of Sidebar -->*/}
 
             {/*<!-- End Microdesafio 2 -->*/}
-            <Switch>
+            {/* <Switch>
                 <Route exact path="/">
                     <ContentWrapper />
                 </Route>
@@ -90,9 +90,8 @@ function SideBar(){
                     <ContentRowMovies />
                 </Route>
                 <Route component={NotFound} />
-            </Switch>
+            </Switch> */}
             {/*<!-- End Microdesafio 2 -->*/}
         </React.Fragment>
     )
 }
-export default SideBar;

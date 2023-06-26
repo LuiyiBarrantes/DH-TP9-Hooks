@@ -1,8 +1,8 @@
 import React from 'react';
 import TopBar from './TopBar';
-import ContentRowTop from './ContentRowTop';
+import ContentRowTop from '../pages/ContentRowTop';
 import Footer from './Footer';
-function ContentWrapper(){
+export const ContentWrapper = () => {
     return (
         <React.Fragment>
             {/*<!-- Content Wrapper -->*/}
@@ -17,4 +17,3 @@ function ContentWrapper(){
         </React.Fragment>
     )
 }
-export default ContentWrapper;

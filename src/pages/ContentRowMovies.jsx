@@ -1,5 +1,5 @@
 import React from 'react';
-import SmallCard from './SmallCard';
+import SmallCard from '../components/SmallCard';
 
 /*  Cada set de datos es un objeto literal */
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import imagenFondo from '../assets/images/404.png';
 
-function NotFound(){
+export const NotFound = () => {
     return(
         <div className="text-center">
             <h1>404 Not Found</h1>
@@ -10,6 +10,3 @@ function NotFound(){
         
     )
 }
-
-
-export default NotFound;
